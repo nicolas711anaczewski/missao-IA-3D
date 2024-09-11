@@ -100,7 +100,10 @@ function respostaSelecionada(opcaoSelecionada){
 function mostraResultado(){
     caixaPerguntas.textContent = "Em 2049...";
     textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = ""; 
+    caixaAlternativas.textContent = "";
+    caixaResultado.claslist.add("mostrar");
+    botaoJogarNovamente.addEventlistener("click"; jogarNovamente);
 }
-
+function jogarNovamente {
+    atua 
 mostraPergunta();
