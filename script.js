@@ -14,6 +14,7 @@ const perguntas = [
                     "eu acho pessoas que fazem racismo mal carater ",
                     "afirmacao 2"
                     ]
+           botaoiniciar.addEventlistener('click', iniciajogo);
             },
             {
                 texto: "voce apoia o racismo ",
@@ -94,7 +95,9 @@ function respostaSelecionada(opcaoSelecionada){
     const afirmacoes = opcaoSelecionada.afirmacao;
     historiaFinal += afirmacoes + " ";
     atual++;
+}else { 
     mostraPergunta();
+    return;
 }
 
 function mostraResultado(){
